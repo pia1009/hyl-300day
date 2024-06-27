@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'JF Open Huninn';
+    src: url('jf-openhuninn-2.0.ttf') format('truetype');
+}
+
+body {
+    font-family: 'JF Open Huninn', cursive;
+    text-align: center;
+    background-color: #ffe6e6; 
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    padding: 20px;
+    display: none; 
+}
+
+.page.active {
+    display: block; 
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ffcccc; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff; 
+    text-transform: uppercase; 
+    outline: none; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #ff99cc; 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.cute-bear {
+    display: block; 
+    margin-left: auto;
+    margin-right: 90px;
+    width: 250px; 
+    height: auto;
+}
+
+.extra-image {
+    max-width: 200px; 
+    height: auto; 
+}
+
+.hidden {
+    display: none; 
+}
+
+
+
+
+#fireworks-gif {
+    max-width: 100%; 
+    height: auto;
+    margin: auto; 
+    display: block; 
+    margin-top: 20px; 
+}
+
+#slideshow img {
+    width: 100%;
+    max-width: 300px;
+    display: none; 
+}
+
+#slideshow img.active {
+    display: block; 
+}
+
+
+#countdown {
+    font-family: 'JF Open Huninn', cursive;
+    font-size: 48px; 
+    color: #ff6699; 
+    text-shadow: 2px 2px #ffe6e6; 
+    margin-top: 20px;
+}
+
+
+
+
+.envelope {
+    margin-top: 20px;
+    width: 200px; 
+    height: auto; 
+    opacity: 0;
+    animation: fadeIn 2s forwards, float 4s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.letter {
+    position: absolute; 
+    top: -300px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    opacity: 0; 
+    transition: all 3s ease-in-out; 
+}
+
+.letter.open {
+    top: 200px; 
+    opacity: 1; 
+}
+
+.letter img {
+    width: 100%; 
+    height: auto; 
+}
+
+.reject-button {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ff99cc; 
+    color: #fff; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.reject-button:hover {
+    background-color: #ff6699; 
+}
+
+.video-container {
+    position: relative; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#confession-video {
+    width: 100%; 
+    height: auto; 
+}
+
+#confession-page button {
+    margin-top: 10px; 
+    display: block; 
+    width: 100%; 
+    max-width: 200px; 
+    margin: 10px auto; 
+}
+
+
+
+
+
